@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>豆瓣电影爬取页面</title>
+</head>
+<body>
+    <h1>豆瓣电影TOP250</h1>
+    <table>
+        <tr>
+            <td>电影名称</td>
+            <td>电影评分</td>
+            <td>电影评价</td>
+            <td>电影短评</td>
+        </tr>
+        {% for Mymovie in movie %}
+        <tr>
+            <td>{{Mymovie.Moviename}}</td>
+            <td>{{Mymovie.Grade}}</td>
+            <td>{{Mymovie.pj}}</td>
+            <td>{{Mymovie.dp}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

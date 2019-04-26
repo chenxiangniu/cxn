@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>动态爬取京东手机页面</title>
+</head>
+<body>
+    <h1>京东手机</h1>
+    <table>
+        <tr>
+            <td>手机名称</td>
+            <td>手机价格</td>
+        </tr>
+        {% for Myphone in phone %}
+        <tr>
+            <td>{{Myphone.name}}</td>
+            <td>{{Myphone.price}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
